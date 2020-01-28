@@ -1,0 +1,7 @@
+*.exe
+*/debug/*
+Makefile
+.vscode/*
+*.pdb
+*.obj
+*.ilk

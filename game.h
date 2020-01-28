@@ -11,9 +11,9 @@ private:
     array<array<char, 3>, 3> board;
 
     void printBoard() const;
-    bool isLegalCoordinate(int x, int y) const;
+    bool isLegalCoordinate(int row, int col) const;
     bool isFull() const;
-    bool hasWon(int x, int y) const;
+    bool hasWon(int row, int col) const;
     pair<int, int> getPlayerInput() const;
     bool playerTurn(const Player &player);
 

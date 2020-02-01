@@ -7,14 +7,14 @@ struct Player {
 
 class TicTacToe {
 private:
-    array<Player, 2> players;
+    array<Player, 2> players; // array er en vector med fast størrelse
     array<array<char, 3>, 3> board;
 
     void printBoard() const;
-    bool isLegalCoordinate(int row, int col) const;
     bool isFull() const;
     bool hasWon(int row, int col) const;
     pair<int, int> getPlayerInput() const;
+    bool isLegalCoordinate(int row, int col) const;
     bool playerTurn(const Player &player);
 
 public:
